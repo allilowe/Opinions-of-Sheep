@@ -1,0 +1,61 @@
+
+/*
+	STYLE.CSS:
+	One stylesheet to rule them all.
+
+	selector { property:value }
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lobster|Passion+One|Bree+Serif);
+
+body {
+  background-color: #252325;
+}
+
+.pageContainer {
+  width: 940px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.imageContainer {
+  float: left;
+  width: 620px;
+}
+
+.textContainer {
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 34px;
+  color: #252325;
+}
+
+p {
+  font-family: 'Bree Serif', serif;
+  font-size: 12px;
+  color: #252325;
+}
+
+
+/* ---- Advanced ---- */
+/* This tag is a bit advanced for this lesson,
+   but is needed to wrap the pageContainer
+   around any sized content that is floated within it. */
+
+.pageContainer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
